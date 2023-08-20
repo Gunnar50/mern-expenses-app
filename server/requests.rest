@@ -1,0 +1,28 @@
+POST http://localhost:3001/room/add
+Content-Type: application/json
+
+{
+    "title": "Room Whatever"
+
+}
+
+###
+POST http://localhost:3001/expense/add
+Content-Type: application/json
+
+{
+    "title": "Expense Test",
+    "price": 10.2,
+    "paid_by": "64e1fbc7e7c63393b97d491f",
+    "participants" : ["64e1fbc7e7c63393b97d491f"]
+
+}
+
+###
+POST http://localhost:3001/auth/login
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "test"
+}
