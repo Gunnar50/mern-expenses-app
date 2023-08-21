@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-
 const ExpenseSchema = new mongoose.Schema({
     title: {type:String, required:true},
     price: {type:mongoose.Schema.Types.Decimal128, required:true},
