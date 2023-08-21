@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-
 const RoomSchema = new mongoose.Schema({
     code: {type: String, required:true},
     title: {type: String, required:true},
