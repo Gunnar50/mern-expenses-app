@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 
-export const EditExpanse = () => {
+export const EditExpense = () => {
 	return (
 		<div>
 			
