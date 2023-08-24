@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.nav .nav-button {
+  margin-top: 10px;
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 40px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  width: 100%; /* Set a width if needed */
+  display: block; /* Make the buttons appear below each other */
+}
