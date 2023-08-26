@@ -15,8 +15,9 @@ export const CreateExpense = () => {
 
 	const getUsersInRoom = async() => {
 		try {
-            await axios.post("http://localhost:3001/expense/add", {expense});
-            alert("Expense Created!");
+            const result = await axios.get("http://localhost:3001/room/get-users/roomid");
+			return result;
+			// return list of users
         } catch (err) {console.error(err);}
 	};
 
