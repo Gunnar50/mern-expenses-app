@@ -83,3 +83,7 @@ export const deleteRoom = async(req, res) => {
 export const calculateBalance = async(req, res) => {
     
 }
+
+export const getAllUserInRoom = async(req, res) => {
+    
+}
