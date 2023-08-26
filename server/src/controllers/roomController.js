@@ -85,5 +85,12 @@ export const calculateBalance = async(req, res) => {
 }
 
 export const getAllUserInRoom = async(req, res) => {
-    
+    try {
+        const roomid = req.params.roomid;
+
+        const room = await RoomModel.findById(roomid);
+        
+        res.json({users: room.users});
+        
+    } catch(err) {res.json(err);}
 }
