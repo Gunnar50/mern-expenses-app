@@ -1,5 +1,5 @@
 import express from "express";
-import { createRoom, updateRoom, getCurrentRoom, getAllRooms, deleteRoom, calculateBalance } from "../controllers/roomController.js";
+import { createRoom, updateRoom, getCurrentRoom, getAllRooms, deleteRoom, calculateBalance, getAllUserInRoom } from "../controllers/roomController.js";
 import {authMiddleware} from "../middleware/authMiddleware.js";
 
 
@@ -9,6 +9,7 @@ router.post("/add", createRoom); // add a new room
 router.put("/update", updateRoom); // update a room
 router.delete("/remove/:roomid", deleteRoom); // remove a room
 router.get("/:userid", getAllRooms); // get a list of rooms per user
+router.get("/get-users/:roomid", getAllUserInRoom); // get all users in current room
 router.get("/:roomid", getCurrentRoom); // get a current room by ID
 router.get("/balance", calculateBalance); // calculate the current balance
 
