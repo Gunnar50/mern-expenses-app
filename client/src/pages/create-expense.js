@@ -27,20 +27,18 @@ export const CreateExpense = () => {
 			<form onSubmit={onSubmit}>
                 <h2 className="card-title">Create Expense</h2>
                 <div className="form-group">
-                    <input className="form-control" type="text" id="title" placeholder="Expense Title" onChange={(event) => setTitle(event.target.value)} required/>
+                    <input className="form-control" type="text" id="title" placeholder="Expense Title" onChange={(event) => setExpense(event.target.value)} required/>
                 </div>
 				<div className="form-group">
-                    <input className="form-control" type="number" id="price" placeholder="Price" onChange={(event) => setTitle(event.target.value)} required/>
+                    <input className="form-control" type="number" id="price" placeholder="Price" onChange={(event) => setExpense(event.target.value)} required/>
                 </div>
 				<div className="form-group">
-                    <select className="form-control" id="paid-by" placeholder="Paid By" onChange={(event) => setTitle(event.target.value)} required>
+                    <select className="form-control" id="paid-by" placeholder="Paid By" onChange={(event) => setExpense(event.target.value)} required>
 						<option>user1</option>
 						<option>user2</option>
 					</select>
                 </div>
-				<div className="form-group">
-                    <input className="form-control" type="checkbox" id="price" placeholder="Price" onChange={(event) => setTitle(event.target.value)} required/>
-                </div>
+				
                 <button className="btn btn-primary" type="submit">Create</button>
             </form>
 		</div>
