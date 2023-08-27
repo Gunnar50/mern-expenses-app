@@ -13,13 +13,16 @@ export const CreateExpense = () => {
 	});
     const navigate = useNavigate();
 
-	const getUsersInRoom = async() => {
+	useEffect(() => {
+		const getUsersInRoom = async() => {
 		try {
             const result = await axios.get("http://localhost:3001/room/get-users/roomid");
 			return result;
 			// return list of users
         } catch (err) {console.error(err);}
 	};
+	}, [])
+	
 
     const onSubmit = async (event) => {
         event.preventDefault();
